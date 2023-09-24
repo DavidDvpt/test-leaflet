@@ -2,7 +2,7 @@ import { useMapEvents } from "react-leaflet";
 
 function MapEvent() {
   useMapEvents({
-    async click(e) {},
+    async click(e: any) {},
   });
 
   return null;

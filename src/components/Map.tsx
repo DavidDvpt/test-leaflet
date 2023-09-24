@@ -2,8 +2,7 @@ import { LatLngExpression } from "leaflet";
 import "leaflet-draw/dist/leaflet.draw.css";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer } from "react-leaflet";
-import CustomControl from "./CustomControl";
-import EditControlLayer from "./EditControlLayer";
+import CControl from "./CControl";
 const position: LatLngExpression = [43.492949, -1.474841];
 
 const Map = () => {
@@ -19,8 +18,9 @@ const Map = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {/* <DynamicLine /> */}
-      <EditControlLayer />
-      <CustomControl />
+      {/* <EditControlLayer /> */}
+      {/* <CustomControl /> */}
+      <CControl />
     </MapContainer>
   );
 };
